@@ -1,0 +1,14 @@
+<div class="text-center">
+  <h1>Your score</h1>
+  <p>
+    <%= @grid %>
+    <br>
+    Your word was <%= @attempt %>. The translation is <%= @result[:translation] %>.
+    <br>
+    It took <%= @result[:time].round %> seconds to answer.
+    <br>
+    Your score is <%= @result[:score] %>.
+    <%= @result[:message] %>
+  </p>
+</div>
+
